@@ -1,0 +1,14 @@
+{
+    "name": "ecommerce-workspace",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev:backend": "npm run dev --prefix ecommerce-app",
+        "dev:frontend": "npm run dev --prefix ecommerce-frontend",
+        "dev": "npm run dev:backend & npm run dev:frontend"
+    },
+    "workspaces": [
+        "ecommerce-app",
+        "ecommerce-frontend"
+    ]
+}
